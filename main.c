@@ -4,10 +4,13 @@
 
 int main(int argc, char *argv[]) {
 
-    int i = 2;
+    int i = 2, j = 0;
 
-    int j = atoi(argv[1]);
-
+    if (argc == 2 )
+    	j = atoi(argv[1]);
+    else
+	j = i; 
+   
     printf("\n-------------Probando la función cuadrado-------------------\n");
     printf("\nEl cuadrado de %d es %d\n", j, cuadrado(&j)); 
     
