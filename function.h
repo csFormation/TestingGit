@@ -4,5 +4,6 @@
 #include <stdio.h>
 
 int cuadrado(int* ptr);
+int cuadra2(int numero);
 
 #endif
