@@ -13,6 +13,8 @@ int main(int argc, char *argv[]) {
    
     printf("\n-------------Probando la función cuadrado-------------------\n");
     printf("\nEl cuadrado de %d es %d\n", j, cuadrado(&j)); 
-    
+    printf("El cuadrado de %d es %d\n", j, cuadra2(j));	
+
+
     return 0;
 }
