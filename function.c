@@ -7,3 +7,8 @@ int cuadrado(int* ptr)
 
     return valor;	
 }
+
+int cuadra2(int numero) {
+
+    return cuadrado(&numero);
+}
