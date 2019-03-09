@@ -3,10 +3,7 @@
 
 int cuadrado(int* ptr) 
 {
-    int valor = (*ptr) * (*ptr);
-    valor--;
-    valor++;
-    
+    int valor = (*ptr) * (*ptr);  
 
-    return (valor + 1 - 1);	
+    return (valor);	
 }
