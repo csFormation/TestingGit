@@ -5,5 +5,5 @@ int cuadrado(int* ptr)
 {
     int valor = (*ptr) * (*ptr);  
 
-    return (valor);	
+    return valor;	
 }
