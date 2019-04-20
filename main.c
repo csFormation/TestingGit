@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     strcpy(str, "This is tutorialspoint.com");
     len = strlen(str);
 
-    printf("Length of '%s' is %d\n", str, len);
+    printf("Length of '%s' es %d\n", str, len);
 
     return 0;
 }
