@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "function.h"
+#include "string.h"
 
 int main(int argc, char *argv[]) {
 
@@ -15,6 +16,14 @@ int main(int argc, char *argv[]) {
     printf("\nEl cuadrado de %d es %d\n", j, cuadrado(&j)); 
     printf("El cuadrado de %d es %d\n", j, cuadra2(j));	
     printf("--------------------------------------------------------------\n");
+
+    int len;
+    char str[50];
+    
+    strcpy(str, "This is tutorialspoint.com");
+    len = strlen(str);
+
+    printf("Length of '%s' es %d\n", str, len);
 
     return 0;
 }
