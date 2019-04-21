@@ -88,4 +88,17 @@ informatico@antares ~/workspace/ws-git/testingGit $ git log --oneline --decorate
 | * f799d3c (origin/documentation, documentation) Adding documentation ref# 1
 |/  
 
+------------------------------------------------------------------------
+
+Eliminar una rama en local
+
+informatico@antares ~/workspace/ws-git/testingGit $ git branch -d issues 
+Eliminada la rama issues (era 2aea070)
+
+Para eliminarla ahora del servidor
+informatico@antares ~/workspace/ws-git/testingGit $ git push origin --delete issues
+Username for 'https://github.com': csFormation
+Password for 'https://csFormation@github.com': 
+To https://github.com/csFormation/testingGit.git
+ - [deleted]         issues
 
