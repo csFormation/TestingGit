@@ -13,3 +13,14 @@ void tercero() {
     printf( "Añadiendo nuevos mensajes a la función 'tercero'\n" );
 	
 }
+
+void cuarto( int *num ) {
+	
+	printf( "Valor recibido es %d\n", *num );
+	
+	*num = *num + 1;	
+
+
+}	
+
+	
