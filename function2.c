@@ -10,5 +10,6 @@ void tercero() {
     (void) c;
     
     printf( "Hola desde la función 'tercero'\n");
+    printf( "Añadiendo nuevos mensajes a la función 'tercero'\n" );
 	
 }
