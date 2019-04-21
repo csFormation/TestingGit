@@ -1,0 +1,91 @@
+Showing remotes servers configured:
+
+informatico@antares ~/workspace/ws-git/testingGit $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/csFormation/testingGit.git
+  Push  URL: https://github.com/csFormation/testingGit.git
+  HEAD branch: master
+  Remote branches:
+    cr-2446 tracked
+    master  tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+informatico@antares ~/workspace/ws-git/testingGit $ git checkout
+Su rama está actualizada con «origin/master».
+------------------------------------------------------------------------
+
+Seeing where I am:
+
+informatico@antares ~/workspace/ws-git/testingGit $ git branch -v
+* master c58e898 Adding function2 to main
+------------------------------------------------------------------------
+
+Eliminating branch cr-2446 in remote:
+
+informatico@antares ~/workspace/ws-git/testingGit $ git push origin --delete cr-2446
+Username for 'https://github.com': csFormation
+Password for 'https://csFormation@github.com': 
+To https://github.com/csFormation/testingGit.git
+ - [deleted]         cr-2446
+informatico@antares ~/workspace/ws-git/testingGit $ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/csFormation/testingGit.git
+  Push  URL: https://github.com/csFormation/testingGit.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+
+------------------------------------------------------------------------
+Don't forget to do a git fetch --all --prune on other machines after 
+deleting the remote branch on the server. ||| After deleting the local 
+branch with git branch -d and deleting the remote branch with git push 
+origin --delete other machines may still have "obsolete tracking branches" 
+(to see them do git branch -a). To get rid of these do git fetch --all --prune.
+
+
+informatico@antares ~/workspace/ws-git/testingGit $ git fetch --all --prune
+Fetching origin
+informatico@antares ~/workspace/ws-git/testingGit $ 
+
+------------------------------------------------------------------------
+To see your configurarion
+
+informatico@antares ~/workspace/ws-git/testingGit $ git config --list
+user.email=artisanade@gmail.com
+user.name=Mirka
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/csFormation/testingGit.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+------------------------------------------------------------------------
+When you have your project at a point that you want to share, you have to push it upstream. The
+command for this is simple: git push <remote> <branch>. If you want to push your master branch to
+your origin server (again, cloning generally sets up both of those names for you automatically),
+then you can run this to push any commits you’ve done back up to the server:
+
+$ git push origin master
+
+------------------------------------------------------------------------
+See where we are from console
+
+informatico@antares ~/workspace/ws-git/testingGit $ git log --oneline --decorate --graph --all -5
+* 530e14f (HEAD, origin/master, origin/HEAD, master) Moficando main in last line
+| * 2aea070 (origin/issues, issues) Adding a modification into how_to_git.txt
+| * 0e51b13 Arreglando main
+| * d8d18fd Solving warnings in function2
+|/  
+| * f799d3c (origin/documentation, documentation) Adding documentation ref# 1
+|/  
+
+
