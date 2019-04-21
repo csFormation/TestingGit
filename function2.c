@@ -5,5 +5,7 @@
 void tercero() { 
     int i = 9;
     char c = 'A';
+    
+    printf( "Hola desde la función 'tercero'\n");
 	
 }

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "function.h"
+#include "function2.h"
 #include "string.h"
 
 int main(int argc, char *argv[]) {
@@ -24,6 +25,8 @@ int main(int argc, char *argv[]) {
     len = strlen(str);
 
     printf("Length of '%s' es %d\n", str, len);
+    printf("Llamando a la función tercero");
+    tercero();
 
     return 0;
 }
