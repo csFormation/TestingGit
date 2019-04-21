@@ -109,6 +109,11 @@ informatico@antares ~/workspace/ws-git/testingGit $ git remote -v
 origin	git@github.com:csFormation/testingGit.git (fetch)
 origin	git@github.com:csFormation/testingGit.git (push)
 
+More help:
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://help.github.com/en/articles/working-with-ssh-key-passphrases
+https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+https://help.github.com/en/articles/changing-a-remotes-url#switching-remote-urls-from-https-to-ssh
 
 
 Para explicación del ssh-agent ver:
