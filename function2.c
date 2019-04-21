@@ -12,3 +12,12 @@ void tercero() {
     printf( "Hola desde la función 'tercero'\n");
 	
 }
+
+void cuarto( int *num ) {
+	
+	printf( "Valor recibido es %d\n", *num );
+	
+	*num = *num + 1;	
+	printf( "Estoy modificando cositas...\n");
+
+}	
