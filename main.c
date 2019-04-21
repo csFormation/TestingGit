@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
     len = strlen(str);
 
     printf("Length of '%s' es %d\n", str, len);
-    printf("Llamando a la función tercero");
+    printf("Llamando a la función tercero de function2");
     tercero();
 
     return 0;
