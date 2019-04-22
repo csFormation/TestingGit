@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     tercero();
     cuarto(&len);
     printf("Function: cuarto - ahora len es %d\n", len);
-    printf("Modificando la función main")
+    printf("Modificando la función main");
 
     return 0;
 }
