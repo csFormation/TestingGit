@@ -19,5 +19,6 @@ void cuarto( int *num ) {
 	
 	*num = *num + 1;	
 	printf( "Estoy modificando cositas...\n");
-	printf( "Probando rebase\n");
+	printf( "Probando rebase\n" );
+	printf( "Otro commit\n" );
 }	
