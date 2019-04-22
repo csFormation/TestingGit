@@ -108,4 +108,9 @@ Ver todos los commits de todas las ramas
 
 informatico@antares ~/workspace/ws-git/testingGit $ git log --oneline --all --decorate -10
 
+------------------------------------------------------------------------
+Cambiando el mensaje del último commit
+
+informatico@antares ~/workspace/ws-git/testingGit $ git commit --amend
+
 
