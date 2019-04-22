@@ -27,5 +27,6 @@ int quinto( int *num ) {
 	printf( "Valor recibido es %d\n", *num );
 	
 	*num = *num + 5;	
+	printf("Devolviendo 2 desde quinto\n");
 	return 2;
 }	
