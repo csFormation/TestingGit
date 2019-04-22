@@ -114,3 +114,11 @@ Cambiando el mensaje del último commit
 informatico@antares ~/workspace/ws-git/testingGit $ git commit --amend
 
 
+------------------------------------------------------------------------
+Moviéndose a un commit:
+
+informatico@antares ~/workspace/ws-git/testingGit $ git reset --hard 33b6925
+
+Pero atención, todos los cambios que no hayan sido 'commited' serán perdidos
+al volver al 'commit' de origen. Es un comando peligroso.
+------------------------------------------------------------------------
