@@ -30,6 +30,8 @@ int main(int argc, char *argv[]) {
     cuarto(&len);
     printf("Function: cuarto - ahora len es %d\n", len);
     printf("Modificando la función main");
+    
+    printf("Ending program\n\n");
 
     return 0;
 }
