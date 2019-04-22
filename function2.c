@@ -22,3 +22,10 @@ void cuarto( int *num ) {
 	printf( "Probando rebase\n" );
 	printf( "Otro commit\n" );
 }	
+
+int quinto( int *num ) {
+	printf( "Valor recibido es %d\n", *num );
+	
+	*num = *num + 5;	
+	return 2;
+}	

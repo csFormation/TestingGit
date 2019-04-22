@@ -2,3 +2,4 @@
 
 void tercero();
 void cuarto( int* ); 
+int quinto( int* ); 
