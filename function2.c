@@ -19,4 +19,5 @@ void cuarto( int *num ) {
 	
 	*num = *num + 1;	
 	printf( "Estoy modificando cositas...\n");
+	printf( "Probando rebase\n");
 }	
